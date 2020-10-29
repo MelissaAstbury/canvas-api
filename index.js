@@ -1,4 +1,4 @@
-// ** Animations ** //
+// ** Animation for Cirlce ** //
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
 
@@ -30,6 +30,7 @@ function update() {
     circle.dx *= -1;
   }
 
+  // Detect bottom and top walls
   if (circle.y + circle.size > canvas.height || circle.y - circle.size < 0) {
     circle.dy *= -1;
   }
